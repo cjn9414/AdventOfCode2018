@@ -1,4 +1,4 @@
-def main():
+def day1_part2():
     already_hit = set()
     frequency = 0
     already_hit.add(frequency)
@@ -15,4 +15,4 @@ def main():
                     already_hit.add(frequency)
 
 
-main()
+day1_part2()

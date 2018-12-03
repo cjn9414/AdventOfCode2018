@@ -1,4 +1,4 @@
-def main():
+def day2_part1():
     two_count = 0
     three_count = 0
     with open('input.txt') as file:
@@ -21,4 +21,4 @@ def main():
     print(two_count*three_count)
 
 
-main()
+day2_part1()

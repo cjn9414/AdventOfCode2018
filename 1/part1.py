@@ -1,4 +1,4 @@
-def main():
+def day1_part1():
     frequency = 0
     with open('input.txt') as file:
         for line in file:
@@ -6,4 +6,4 @@ def main():
     print(frequency)
 
 
-main()
+day1_part1()

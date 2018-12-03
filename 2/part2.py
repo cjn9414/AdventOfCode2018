@@ -1,4 +1,4 @@
-def main():
+def day2_part2():
     with open('input.txt') as file:
         ids = set()
         for line in file:
@@ -27,4 +27,4 @@ def difference(st1, st2):
     return diff
 
 
-main()
+day2_part2()

@@ -1,4 +1,4 @@
-def main():
+def day3_part1():
     double_occupied = {}
     overlap_count = 0
     with open('input.txt') as file:
@@ -20,5 +20,5 @@ def main():
     print(overlap_count)
 
 
-main()
+day3_part1()
 
