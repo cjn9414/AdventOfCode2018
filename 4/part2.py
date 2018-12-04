@@ -4,7 +4,8 @@ def main():
     for i in range(60):
         minutes[i] = {}
 
-    with open('input.txt') as file:
+   """ LOAD DATA FROM FILE """
+   with open('input.txt') as file:
         for line in file:
             time = line.split(']')
             time = [int(time[0][6:8] + time[0][9:11] +
@@ -12,7 +13,8 @@ def main():
             data.append(time)
         data.sort(key=lambda x: x[0])
     file.close()
-
+    
+    """ FIND GUARD AND MINUTE SUCH THAT THE GUARD IS MOST LIKELY ASLEEP """
     for entry in data:
         if '#' in entry[1]:
             sleeping_guard = int(entry[1][7:11])

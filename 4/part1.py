@@ -2,6 +2,7 @@ def main():
     data = []
     sleep_count = {}
     on_duty = 0
+    
     """ LOAD DATA FROM FILE """
     with open('input.txt') as file:
         for line in file:
@@ -12,7 +13,8 @@ def main():
             data.append(time)
         data.sort(key=lambda x: x['time'])
     file.close()
-    """ FIND GUARD THAT SLEEPS THE LONGEST """
+
+    """ ANALYZE DATA TO COLLECT SLEEP TIME FOR ALL GUARDS """
     for entry in data:
         if entry['event'] == "falls asleep":
             sleep_count[on_duty] = [sleep_count[on_duty][0], entry['time']]
@@ -24,7 +26,8 @@ def main():
                 sleep_count[on_duty] = [sleep_count[on_duty][0]]
             else:
                 sleep_count[on_duty] = [0]
-                
+
+    """ FIND GUARD WITH THE MOST SLEEP TIME """
     max_sleep = 0
     max_sleep_guard = None
     for guard in sleep_count:
@@ -32,6 +35,7 @@ def main():
             max_sleep = sleep_count[guard][0]
             max_sleep_guard = guard
 
+    """ FIND MINUTE THAT GUARD IS MOST COMMONLY ASLEEP """
     minutes = {}
     asleep_minute = 0
     sleepy_guard_on_duty = False
