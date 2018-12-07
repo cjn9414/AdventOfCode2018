@@ -1,4 +1,4 @@
-def main():
+def day6_part2():
     coords = {}
     area = 0
     with open('input.txt') as file:
@@ -27,4 +27,4 @@ def get_smallest_coord(coords, pt):
         return True
 
 
-main()
+day6_part2()

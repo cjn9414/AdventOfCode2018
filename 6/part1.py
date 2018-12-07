@@ -1,4 +1,4 @@
-def main():
+def day6_part1():
     coords = {}
     with open('input.txt') as file:
         for line in file:
@@ -39,4 +39,4 @@ def get_smallest_coord(coords, pt):
         return closest_coord
 
 
-main()
+day6_part1()

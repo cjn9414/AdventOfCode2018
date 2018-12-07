@@ -1,4 +1,4 @@
-def main():
+def day5_part2():
     lengths = {}
     letters = [chr(i) for i in range(ord('a'), ord('z')+1)]
     with open('input.txt') as file:
@@ -23,4 +23,4 @@ def main():
     print(smallest_poly_length, lengths[smallest_poly_length])
 
 
-main()
+day5_part2()

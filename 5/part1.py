@@ -1,4 +1,4 @@
-def main_5():
+def day5_part1():
     with open('input.txt') as file:
             polymer = file.readline().strip()
     reacting = True
@@ -15,4 +15,4 @@ def main_5():
     print(len(polymer))
 
 
-main_5()
+day5_part1()

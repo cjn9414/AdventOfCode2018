@@ -1,4 +1,4 @@
-def main():
+def day4_part2():
     data = []
     minutes = {}
     for i in range(60):
@@ -44,4 +44,4 @@ def sleepiest_guard_and_time(minutes):
     return max_guard * max_min
 
 
-main()
+day4_part2()

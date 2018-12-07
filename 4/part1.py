@@ -1,4 +1,4 @@
-def main():
+def day4_part1():
     data = []
     sleep_count = {}
     on_duty = 0
@@ -66,4 +66,4 @@ def sleepiest_guard_and_time(minutes, guard):
     return guard * max_min
 
 
-main()
+day4_part1()
